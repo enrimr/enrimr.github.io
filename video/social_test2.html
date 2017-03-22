@@ -42,7 +42,22 @@
         <meta property="og:video:width" content="460">
         <meta property="og:locale" content="es_ES">-->
         <!-- Facebook end -->
+  <script>
+    window.$ = function(selector) {
+      var selectorType = 'querySelectorAll';
 
+      if (selector.indexOf('#') === 0) {
+          selectorType = 'getElementById';
+          selector = selector.substr(1, selector.length);
+      }
+
+      return document[selectorType](selector);
+    };
+    function showUpload(){
+      
+    }
+
+  </script>
 </head>
 
 <body>
@@ -81,8 +96,8 @@
   </style>
 
   <center>
-  <video id="my-video" class="vjs-custom video-js vjs-big-play-centered" controls preload="auto" width="640" height="264" 
-  poster="poster_example.png" data-setup="{'fluid': true, 'aspectRatio':'4:3'}">
+  <video id="my-video" class="vjs-custom video-js vjs-big-play-centered" controls preload="auto" width="435" 
+   poster="poster_example.png" data-setup="{'fluid': true, 'aspectRatio':'4:3'}">
     <source src="cocacola_example.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -99,11 +114,3 @@
 
   <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
 </body>
-
-<script>
-
-  function showUpload(){
-    alert("lala");
-  }
-
-</script>
