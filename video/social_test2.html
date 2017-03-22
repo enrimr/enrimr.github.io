@@ -3,7 +3,7 @@
 
   <!-- If you'd like to support IE8 -->
   <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-  <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+
   <!-- Twitter -->
   <meta content="EnriMR" property="twitter:site" />
   <meta content="com.cuaqea.cuaqea" property="twitter:app:id:googleplay" />
@@ -85,7 +85,15 @@
     }
     .btn.btn-primary{
       background-color: #f00;
-      wid;
+    }
+
+    .btn-50-right{
+      width: 40%;
+      float: right;
+    }
+    .btn-50-left{
+      width: 40%;
+      float: left;
     }
 
     #shareButton {
@@ -103,14 +111,15 @@
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
-  <div id="shareButton" class="btn btn-primary" onclick="showUpload()">
+  <div id="shareButton" class="btn btn-primary btn-50-right" onclick="showUpload()">
     Share a coke
   </div>
-  <div class="btn btn-primary">
+  <div class="btn btn-primary btn-50-left">
     <a href="http://www.marca.com">Create new video</a>
   </div>
   </center>
 
+  <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
   <script>
   function showUpload(){
       $("#shareButton").style.backgroundColor = "#00ff00";
