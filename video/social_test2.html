@@ -54,7 +54,7 @@
       return document[selectorType](selector);
     };
     function showUpload(){
-      
+      $("#shareButton")[0].style.backgroundColor = "#00ff00";
     }
 
   </script>
@@ -93,6 +93,10 @@
       wid;
     }
 
+    #shareButton {
+      cursor: pointer;
+    }
+
   </style>
 
   <center>
@@ -104,7 +108,7 @@
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
-  <div class="btn btn-primary" onclick="showUpload()">
+  <div id="shareButton" class="btn btn-primary" onclick="showUpload()">
     Share a coke
   </div>
   <div class="btn btn-primary">
